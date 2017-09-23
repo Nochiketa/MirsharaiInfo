@@ -13,6 +13,7 @@ public class History extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         T1 = (TextView)findViewById(R.id.textView2);
         setTitle("ইতিহাস");
         T1.setText(R.string.History);

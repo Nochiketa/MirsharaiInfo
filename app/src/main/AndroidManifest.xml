@@ -19,8 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Introduction" />
-        <activity android:name=".History"></activity>
+        <activity
+            android:name=".Introduction"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".History"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".IntroductionDetails"></activity>
     </application>
 
 </manifest>

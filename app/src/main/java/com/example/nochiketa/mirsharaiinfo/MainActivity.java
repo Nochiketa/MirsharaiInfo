@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity
     GridView grid_view;
     String[] names;
     Integer[] img;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +51,11 @@ public class MainActivity extends AppCompatActivity
 
         grid_view = (GridView)findViewById(R.id.gridView) ;
 
-        names = new String[] {"পরিচিতি", "ইতিহাস", "শিক্ষা প্রতিষ্ঠান", "ঊপজেলা প্রশাসন", "দর্শনীয় স্থান", "প্রয়োজনীয় মোবাইল নাম্বার"};
+        names = new String[] {"পরিচিতি", "ইতিহাস", "শিক্ষা প্রতিষ্ঠান",
+                "ঊপজেলা প্রশাসন", "দর্শনীয় স্থান", "প্রয়োজনীয় মোবাইল নাম্বার"};
 
-        img = new Integer[] {R.drawable.location, R.drawable.vintage, R.drawable.library, R.drawable.spa, R.drawable.camera, R.drawable.call};
+        img = new Integer[] {R.drawable.location, R.drawable.vintage, R.drawable.library,
+                R.drawable.spa, R.drawable.camera, R.drawable.call};
 
         GridViewImageAdapter adapter = new GridViewImageAdapter(this, names, img);
 
@@ -70,12 +71,12 @@ public class MainActivity extends AppCompatActivity
 
                 if(position == 0)
                 {
-                    Intent i = new Intent(MainActivity.this, Introduction.class);
+                    Intent i = new Intent(view.getContext(), Introduction.class);
                     startActivity(i);
                 }
                 if(position == 1)
                 {
-                    Intent i = new Intent(MainActivity.this, History.class);
+                    Intent i = new Intent(view.getContext(), History.class);
                     startActivity(i);
                 }
             }
