@@ -1,5 +1,6 @@
 package com.example.nochiketa.mirsharaiinfo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity
     GridView grid_view;
     String[] names;
     Integer[] img;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +32,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });*/
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -62,9 +64,20 @@ public class MainActivity extends AppCompatActivity
         {
             public void onItemClick(AdapterView<?> parent, View view , int position, long id)
             {
-                Intent k = new Intent(MainActivity.this, Main2Activity.class);
+                /*Intent k = new Intent(MainActivity.this, Main2Activity.class);
                 k.putExtra("POS", position);
-                startActivity(k);
+                startActivity(k);*/
+
+                if(position == 0)
+                {
+                    Intent i = new Intent(MainActivity.this, Introduction.class);
+                    startActivity(i);
+                }
+                if(position == 1)
+                {
+                    Intent i = new Intent(MainActivity.this, History.class);
+                    startActivity(i);
+                }
             }
         });
 
