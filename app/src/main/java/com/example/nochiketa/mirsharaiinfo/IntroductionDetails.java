@@ -1,7 +1,11 @@
 package com.example.nochiketa.mirsharaiinfo;
 
+import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class IntroductionDetails extends AppCompatActivity {
@@ -12,6 +16,7 @@ public class IntroductionDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction_details);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         T2 = (TextView)findViewById(R.id.textView2);
 
         Bundle extras = getIntent().getExtras();
@@ -21,11 +26,16 @@ public class IntroductionDetails extends AppCompatActivity {
         {
             setTitle("এক নজরে মীরসরাই");
             T2.setText(R.string.eknojoreMirsharai);
+            T2.setTextSize(20);
+            T2.setTextColor(Color.BLACK);
         }
         else if(position == 1)
         {
             setTitle("ভৈগলিক পরিচিতি");
             T2.setText(R.string.vougolikporichiti);
+            T2.setTextSize(20);
+            T2.setTextColor(Color.BLACK);
+            //T2.setGravity(Gravity.CENTER);
         }
         else if(position == 2)
         {

@@ -17,7 +17,7 @@ public class History extends AppCompatActivity {
         T1 = (TextView)findViewById(R.id.textView2);
         setTitle("ইতিহাস");
         T1.setText(R.string.History);
-        T1.setTextSize(17);
+        T1.setTextSize(20);
         T1.setTextColor(Color.BLACK);
         T1.setGravity(Gravity.CENTER);
     }
