@@ -7,5 +7,7 @@
     <color name="white">#03E97F</color>
     <color name="green">#008000</color>
     <color name = "grey">#FFFAE3</color>
+    <color name="whitee">#ffffff</color>
+    <color name = "imageButtonColor">#FFFAE3</color>
     <color name="ac_bar_green">#007F39</color>
 </resources>

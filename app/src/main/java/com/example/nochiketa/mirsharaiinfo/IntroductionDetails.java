@@ -1,5 +1,6 @@
 package com.example.nochiketa.mirsharaiinfo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -40,7 +41,8 @@ public class IntroductionDetails extends AppCompatActivity {
         else if(position == 2)
         {
             setTitle("মানচিত্রে মীরসরাই");
-            T2.setText(R.string.manchitreMirsharai);
+            Intent i = new Intent(IntroductionDetails.this,MainActivity.class);
+            startActivity(i);
         }
         else if(position == 3)
         {
@@ -56,6 +58,8 @@ public class IntroductionDetails extends AppCompatActivity {
         {
             setTitle("ভাষা ও সংস্কৃতি");
             T2.setText(R.string.VashaandShongsKriti);
+            T2.setTextSize(20);
+            T2.setTextColor(Color.BLACK);
         }
 
     }

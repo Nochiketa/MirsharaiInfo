@@ -2,6 +2,7 @@ package com.example.nochiketa.mirsharaiinfo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -77,6 +78,11 @@ public class MainActivity extends AppCompatActivity
                 if(position == 1)
                 {
                     Intent i = new Intent(view.getContext(), History.class);
+                    startActivity(i);
+                }
+                if(position == 5 )
+                {
+                    Intent i = new Intent(view.getContext(), phoneNumberActivity.class);
                     startActivity(i);
                 }
             }
