@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv13" type="id">tv13</item>
+    <item name="bt4" type="id">bt4</item>
+    <item name="bt5" type="id">bt5</item>
+    <item name="tv16" type="id">tv16</item>
+    <item name="bt6" type="id">bt6</item>
+    <item name="tv22" type="id">tv22</item>
+    <item name="bt7" type="id">bt7</item>
+    <item name="tv25" type="id">tv25</item>
+    <item name="bt8" type="id">bt8</item>
+    <item name="tv28" type="id">tv28</item>
+    <item name="bt9" type="id">bt9</item>
+</resources>
