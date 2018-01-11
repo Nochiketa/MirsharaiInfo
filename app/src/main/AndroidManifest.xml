@@ -30,8 +30,11 @@
         <activity
             android:name=".IntroductionDetails"
             android:parentActivityName=".Introduction" />
-        <activity android:name=".phoneNumberActivity"
-            android:parentActivityName=".Introduction" ></activity>
+        <activity
+            android:name=".phoneNumberActivity"
+            android:parentActivityName=".Introduction" />
+        <activity android:name=".VisitableSights"
+            android:parentActivityName=".Introduction"></activity>
     </application>
 
 </manifest>

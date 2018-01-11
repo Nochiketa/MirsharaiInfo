@@ -80,6 +80,11 @@ public class MainActivity extends AppCompatActivity
                     Intent i = new Intent(view.getContext(), History.class);
                     startActivity(i);
                 }
+                if(position == 4)
+                {
+                     Intent i = new Intent(view.getContext(), VisitableSights.class);
+                     startActivity(i);
+                }
                 if(position == 5 )
                 {
                     Intent i = new Intent(view.getContext(), phoneNumberActivity.class);

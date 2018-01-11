@@ -41,13 +41,16 @@ public class IntroductionDetails extends AppCompatActivity {
         else if(position == 2)
         {
             setTitle("মানচিত্রে মীরসরাই");
-            Intent i = new Intent(IntroductionDetails.this,MainActivity.class);
-            startActivity(i);
+            //Intent i = new Intent(IntroductionDetails.this,MainActivity.class);
+            //T2.setCompoundDrawablesWithIntrinsicBounds(R.drawable.map, 0, 0, 0);
+            //startActivity(i);
         }
         else if(position == 3)
         {
             setTitle("ইউনিয়ন সমূহ");
             T2.setText(R.string.UnionShomuho);
+            T2.setTextSize(20);
+            T2.setTextColor(Color.BLACK);
         }
         else if(position == 4)
         {
